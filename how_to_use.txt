@@ -1,0 +1,17 @@
+For TGB
+    1 run point_cloud_to_mesh.ipynb
+    2 run TGB_crest_lines.ipynb to extract crest lines
+    3 run TGB_validation.ipynb for comparison against human tracing
+    4 run TGB_crestlines_to_shapefile.ipynb to save crest lines as shapefile
+
+For TBK
+    1 run TBK_crest_lines.ipynb to extract crest lines
+    2 run TBK_GPR.ipynb to extract GPR centerlines
+    3 run TBK_validation.ipynb for comparison against GPR centerlines
+    3 run TBK_crestlines_to_shapefile.ipynb to save crest lines as shapefile
+
+How to run .ipynb files:
+    Use VSCode (Visual Studio Code, NOT Visual Studio–these are two separate softwares)
+    Each box in the file contain code. Run code in the boxes from top to bottom of the file.
+NOTE: do NOT change the names of .py files
+    They contain important functions that .ipynb files requires and accesses via their filename
