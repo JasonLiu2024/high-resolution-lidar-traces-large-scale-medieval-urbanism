@@ -1,0 +1,21 @@
+# ninja log v5
+0	10	1686075370823007622	cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-mkdir	e7ee5c9e434e3485
+0	10	1686075370823007622	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/cli11-subbuild/cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-mkdir	e7ee5c9e434e3485
+10	3830	1686075374643361331	cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-download	1512bdad6ec6d632
+10	3830	1686075374643361331	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/cli11-subbuild/cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-download	1512bdad6ec6d632
+3830	3861	0	cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-update	3b01b91befe15cfd
+3830	3861	0	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/cli11-subbuild/cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-update	3b01b91befe15cfd
+3861	3872	1686075374684845789	cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-patch	2afa28d63b0d454a
+3861	3872	1686075374684845789	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/cli11-subbuild/cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-patch	2afa28d63b0d454a
+3872	3882	1686075374695075247	cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-configure	dc6cd37b48b3ce92
+3872	3882	1686075374695075247	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/cli11-subbuild/cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-configure	dc6cd37b48b3ce92
+3882	3893	1686075374706052206	cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-build	c5b36ce39db8bbf1
+3882	3893	1686075374706052206	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/cli11-subbuild/cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-build	c5b36ce39db8bbf1
+3893	3903	1686075374716437164	cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-install	4d7a8015e7971462
+3893	3903	1686075374716437164	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/cli11-subbuild/cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-install	4d7a8015e7971462
+3903	3914	1686075374726677164	cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-test	a0a15026a967a467
+3903	3914	1686075374726677164	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/cli11-subbuild/cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-test	a0a15026a967a467
+3914	3929	1686075374741656247	CMakeFiles/cli11-populate-complete	c83bd6e8dfd7548c
+3914	3929	1686075374741656247	cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-done	c83bd6e8dfd7548c
+3914	3929	1686075374741656247	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/cli11-subbuild/CMakeFiles/cli11-populate-complete	c83bd6e8dfd7548c
+3914	3929	1686075374741656247	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/cli11-subbuild/cli11-populate-prefix/src/cli11-populate-stamp/cli11-populate-done	c83bd6e8dfd7548c

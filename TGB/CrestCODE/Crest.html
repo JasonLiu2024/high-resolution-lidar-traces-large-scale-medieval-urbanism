@@ -1,0 +1,196 @@
+<HTML>
+<HEAD>
+<TITLE>Fast and Robust Detection of Crest Lines on Meshes by Shin Yoshizawa
+</TITLE>
+</HEAD>
+<body BGCOLOR =#FFEBCD TEXT = #008080 LINK=#6495ED>
+<H1 ALIGN="CENTER"><font color=#483D8B>Fast and Robust Detection of Crest Lines on Meshes</font></H1>
+<P ALIGN="CENTER"><STRONG>Shin Yoshizawa</STRONG></P>
+<P ALIGN="LEFT"></P>
+<center>
+<img src="./Images/max400H.jpg"><img src="./Images/max400_0H.jpg"><img src="./Images/max400_47H.jpg"><img src="./Images/max400_200H.jpg">
+</center>
+<hr>
+In this research, we develop a fast and robust method for detecting
+crest lines on surfaces approximated by dense triangle meshes.
+The crest lines, salient surface features defined via first- and 
+second-order curvature derivatives, are widely used for shape 
+matching and interrogation purposes. Their practical extraction 
+is difficult because it requires good estimation of high-order
+surface derivatives. Our approach to the crest line detection 
+is based on estimating the curvature tensor and curvature 
+derivatives via local polynomial fitting. Although in general 
+local fitting methods do not lead to a high-quality estimation 
+of high-order surface derivatives to compare with global ones, 
+a careful choice of a discrete scheme for estimating the surface 
+normal and a fitting method allows us to get very close to the 
+quality of results obtained with global fitting methods. <p>
+
+Another difficulty in practical detection of the crest lines follows 
+from the fact that the crest lines are not defined in planar, 
+spherical, conical, cylindrical and other surface patches where 
+the focal set (caustic) degenerates. In practice, due to noise and 
+mesh irregularities, a straightforward detection of the crest lines 
+will result in producing many spurious crest lines in such surface 
+regions. A new thresholding scheme is proposed in order to filter 
+them out. The scheme exploits interesting relationships between
+curvature extrema, the so-called MVS functional of Moreton and Sequin, 
+and Dupin cyclides, surfaces whose focal sets degenerate to curves.
+
+Since the crest lines are salient view- and scale-independent surface 
+features which correspond well to human perception of surface creases, 
+it is natural to use them for adaptive mesh simplification. 
+We do it via incorporating salient crest lines and their regions 
+of influence into a standard mesh decimation scheme.<p>
+
+This research is collaborated with <a href="http://www.mpi-sb.mpg.de/~belyaev">Dr. A. G. Belyaev</a> and <a href="http://www.mpi-sb.mpg.de/~hpseidel">Prof. Dr. H.-P. Seidel</a>. The <a href="../../spm05ybs.pdf">paper</a> is published in Proc. ACM Symposium on Solid and Physical Modeling (<a href="http://www.gvu.gatech.edu/~jarek/spm/">SPM</a>), pp. 227-232, June 13-15, 2005 at MIT, Cambridge, MA, USA.
+
+<hr>
+<H1>C++ Code and Java3D Viewer</H1>
+
+<ul>
+You can download the <a href="./CrestCODE.tar.gz">C++ code and Java3D Viewer</a> which is TAR.GNUZIP file. After applied gunzip and tar -xf, please read README.txt and the following simple manual. Questions and Bug report are welcome to my e-mail: shin.yoshizawa_At_mpi-sb.mpg.de.
+  <H3>Copyright</H3>
+All rights are reserved by Shin Yoshizawa.  This C++ source files are allowed 
+for only a primary user for research and educational purposes. Don't use 
+secondary use: copy, distribution, diversion, business purpose, and etc.. In no event shall the author be liable to any party for direct, indirect, 
+special, incidental, or consequential damage arising out of the use of this 
+program and source files. 
+
+(*): The functions of the class SvdSolve and Eigens are written in 
+"Numerical Recipes in C++", The Art of Scientific Computing, William H. Press
+, Saul A. Teukolsky, William T. Vetterling, Brian P. Flannery. The copyrights of these functions of SvdSolve and Eigens class are remained to them.
+ </ul> 
+
+<H1>Simple Manual</H1>
+ 
+<ul>
+<H3>How to use</H3>
+<ul>
+<li><font color="993300">Program Organization:</font> The program is constructed by two parts: C++ and Java3D (CrestViewer.jar). The C++ program do actual computations to detect crest lines: normal estimation, polynomial fitting, curvature derivatives calculation, crest line tracing, and Thresholds computations (Ridgeness, Sphericalness and Cyclideness). The Java3D program can visualize the detected crest lines, and can produce an input file for the C++ code easily. Of cause you can use only the C++ code but you have to write the input and visualization parts by yourself. CrestCODE.tar.gz includes a directory: CCode. The CCode directory has all C++ files and Makefile.</li>
+  
+<li><font color="993300">Compile:</font></li>
+  <ul><li><font color=blue>C++ code</font>, by using attached Makefile, you may run "make" in CCode directory. Then you will get the executable file "<i>setCurvature</i>". Please move <i>setCurvature</i> to the JViewer directory (% mv setCurvature ../JViewer/) if you would like to use the Java3D Viewer. Otherwise you can deal with the <i>setCurvature</i> file. You should use the later versions of g++ 2.95.</li>
+</ul>
+  <li><font color="993300">Execute:</font></li>
+<ul>
+  <li><font color=blue>C++ code</font>, You can run <i>setCurvature</i> itself as (% ./setCurvature input.txt output.txt). Then you will get also ridges.txt and ravines.txt which include the information about convex and concave crest lines. The output.txt includes the curvature tensor information. The formats of input.txt, output.txt, ridges.txt and ravines.txt are described in File Formats section of this simple manual.</li>
+<li><font color=blue>Java3D Viewer</font>,</li> You need <a href="http://java.sun.com/products/java-media/3D/index.jsp">JDK and Java3D API</a> environment. You may run java (% java CrestViewer.jar). It is better to specify max and initial heap sizes as (% java -mx600m -ms600m -jar CrestViewer.jar) to avoid <b>OutofMemoryError</b>. Please read the Quick Practice and Viewer Options sections to play the Java3D Viewer. <font color="red">Note that the executable file setCurvature should be located in same directory of CrestViewer Jar file.</font></li> 
+</ul>
+<li><font color="993300">File Formats:</font> </li>
+ <ul>
+   <li><font color="blue">Input for Java3D Viewer:</font> The input triangle mesh have to be constructed by the <a href="http://www/~shin/Research/PLYformat/PLYformat.html">PLY2 format</a>.
+   <li>Recall, when we apply "./setCurvature input.txt output.txt" which also generates ridges.txt and ravines.txt. These .txt files are ascii text.</li>
+<ul>
+   <li><font color="blue">Input of C++ code (input.txt): </font> Similar format of the PLY2 format <font color ="red">but it is not an exact PLY2 format.</font> 1st line is a number of vertices. 2nd line is a number of triangles. 3rd line is a neighborhood size (Integer) for fitting.  4th line is 0 (no crest line tracing) or 1 (with crest line tracing). After these four lines, there are vertex coordinates and face information as PLY2 format but there is no 3 for face line (only three vertex IDs).</li>
+   <li><font color="blue">Outputs of C++ code: </font></li>
+   <ul>
+     <li><font color="blue">output.txt</font>: 1st line is a number of vertices (Integer). 2nd line is a number of triangles (Integer). Starting from 3nd line, 11 Double values in one line: k_{max}, k_{min}, x,y,z of t_{max}, x,y,z of t_{min}, and x,y,z of normal for each vertex ID of input mesh. </li>
+   <li><font color="blue">ridges.txt/ravines.txt: </font> 1st line is a number of convex/concave crest line points (Integer). 2nd line is a number of convex/concave crest line edges. 3rd line is a number of crest line connected components (Integer). Let us notate <i>V</i>, <i>E</i>, and <i>N</i> for above numbers, respectively. Starting from 4th line, there are <i>V</i> lines which include three Double and one Integer values in one line as "%lf %lf %lf %d": x,y,z of crest line point and the connected component ID. The line number of the file minus 4 represents a crest point ID. Next, there are <i>N</i> lines which include three Double values in one line: Ridgeness, Sphericalness and Cyclideness for each corresponded connected component ID (ex. 1st line of this section corresponds ID 0 of the connected component, 2nd line of them represents ID 1 and so on). Finally, there are <i>E</i> lines which include three Integer values: pair of crest points ID (edge) and the triangle ID of original mesh which includes this edge (if there is -1 of that triangle ID then that edge is a connecting edge, see the <a href="../../spm05ybs.pdf">paper</a>).</li>
+   </ul>
+   </ul>
+ </ul>
+ <li><font color="993300">For Windows User:</font> Please use CrestViewerWindows.jar instead of CrestViewer.jar because you may have <i>setCurvature.exe</i> instead of <i>setCurvature</i>. If you have <i>setCurvature</i> then it is OK to use CrestViewer.jar on the Windows OS. Cygwin may help to compile my code on Windows.
+</ul>
+<H3>Quick Practice</H3>
+<font color="red">Note that the C++ executable file (setCurvature) and the Java Jar file (CrestViewer.jar) should be in the same directory.</font>
+<ul>  
+<li><font color="993300">Road to ready:</font><br>
+% gunzip CrestCODE.tar.gz<br>
+% tar -xf CrestCODE.tar <br>
+% cd  ./CrestCODE/CCode<br>
+% make <br>
+% mv  setCurvature ../ <br>
+% java -mx600m -ms600m -jar CrestViewer.jar <br>
+</li>
+<li><font color="993300"> Let's play the crest lines Java3D Viewer:</font><br>
+Click the top menu: file->load->load (poly2)<br>
+Select the file <i>moai.ply2</i>.<br>
+Click "Compute Crests" button.<br>
+Click "Material Light" checkbox.<br>
+Scroll "Cyclideness" scrollbar.
+</li>
+  </ul>
+<H3>Viewer Options</H3>
+<ul>
+<li><font color="993300">Menubar:</font></li>
+<ul>
+  <li>file->exit program: to exit program.</li>
+  <li>file->load:</li>
+  <ul>
+    <li><font color="blue">load (poly2):</font> load an input PLY2 formated triangle mesh.</li>
+    <li>load Ridge/load Ravine: load a set of convex/concave crest lines. Note that you have to load an appropriate original mesh before load crest lines.</li>
+    <li>load view: load a view point.</li>
+    
+    </ul>
+  <li>file->save:</li>
+  <ul>
+  <li>save (poly2): save the current triangle mesh by PLY2 format.</li>
+  <li>save Ridge/load Ravine: save a set of convex/concave crest lines. Note that a all set of crest lines would be saved (they are not current visible crest lines). The file format is save of ridges.txt/ravines.txt which are described in above section of this simple manual.</li>
+  <li>save view: save a view point.</li>
+  <li>save image (.jpg): capture a screen image in the canvas region via JPEG.</li>
+    </ul>
+<li>Original Mesh->exist: On: visualize the original mesh. Off: unbind the original mesh.</li>
+<li>Original Mesh->Normal Color: Coloring the mesh via the original one color.</li>
+<li><font color="blue">Original Mesh->Curvature-Pastel</font>: Coloring the mesh via curvatures: mean (M), Gaussian (K), maximum principal (max) and minimum principal (min) curvatures according to the selected checkbox in the Visualization Type Panel. Note that you have to apply "Compute Crests" button at least one time before selecting this checkbox menu. You can dynamically visualize the curvature via selecting these checkbox in the Visualization Type Panel after select this checkbox menu. To go back normal coloring or white coloring, you may click "Material Light" checkbox twice in the Visualization Type Panel. It is also useful to scroll the "Curvature s-deviation" scrollbar which is thresholding to visualize appropriate curvature value.</li>
+<li>Original Mesh->WireFrame: visualize the mesh via wire frame model. To go back the face rendering, you may select "Original Mesh->Normal Color" checkbox menu.</li>
+<li>Original Mesh->Points: visualize the mesh vertices. To go back the face rendering, you may select "Original Mesh->Normal Color" checkbox menu.</li>
+<li>Original Mesh->2 Light: extra lighting on/off.</li>
+<li>Original Mesh->Back Face: visualize the back face of the mesh on/off.</li>
+<li>Original Mesh->Transparency: half-transparent rendering of the mesh on/off.
+<li>Camera: select camera positions. Nate that it also changes orientation for mouse motions.
+</li>
+
+  </ul>
+<li><font color="993300">Visualization Type Panel:</font></li>
+<ul>
+  <li><font color="red">Material Light:</font> material light and shrinking the mesh on/off. To visualize the crest lines more perceptually, this checkbox affects the mesh geometry, lighting and coloring.</li>
+  <li>M, K, max, and min: visualization curvature types when you select "Original Mesh->Curvature-Pastel" checkbox menu.</li>
+  <li><font color="blue">N, tmax, tmin, R and V:</font> visualize (on/off) the normal (N), maximum principal (tmax) and minimum principal (tmin) directions, convex crest line (R), and concave crest line (V). Note that you have to apply "Compute Crests" button at least one time before selecting this checkbox. Also, if you would like to compute only curvatures and directions then you can select off of "R" and "V" before click the "Compute Crests" button. However you have to apply "Compute Crests" button again (re-calculation) to visualize crest lines.</li>
+  <li><font color="red">Compute Crests:</font> Calculate curvature tensor, crest lines and thresholding values.</li>
+  <li><font color="blue">N-rings N:</font> Neighborhood size for the polynomial fitting (Integer > 0). N-ring neighborhood is applied for the fitting.</li>
+</ul>
+<li><font color="993300">Mesh Processing Tool Panel:</font> This panel is not directly related to the crest lines detection and filtering excepting "FRT" checkbox.</li>
+<ul>
+  <li>Smoothing: apply smoothing to the mesh. St = T,LL: bitangential Laplacian. St = L: Laplacian. St = L(L): bilaplacian. I: initialize vertex positions. Note that the smoothing result does not affect to the crest line detection if the checkbox "C" is off. If the checkbox "C" is on then the smoothing result will send to processing of the crest line detection when you click "Compute Crests". TextField represents a number of smoothing iterations.</li>
+  <li>Subdivide: apply subdivision to the mesh via Loop, Butterfly, or Linear. The subdivision results overwrite the original mesh. Loop N: Loop subdivision without projection to the limit position. Loop: Loop with limit position projection. TextField represents a number of subdivision iterations. Note that please do not apply "Subdivide" the large mesh or many times iterations because of my memory expensive implementation (you will have <b>OutofMemoryError</b> after a long time waiting).</li>
+  <li>GH-Decimation: apply Garlnd-Heckbert mesh simplification. "P:" is a reduction ratio (percentage). The decimation result overwrites the original mesh.</li>
+  <li><font color="blue">FRT:</font> This checkbox affects the crest line thresholding when you scroll the scrollbars. On: the scrollbar dynamically affects the visualization result. Off: the scrollbar does not affects the visualization result. It might be useful for the huge meshes because you can change a value of thresholding without visualization, then you can update that value by clicking the triangle buttons of the left and right sides of the scrollbar after activate (off -> on) this checkbox.</li>
+  
+  </ul>
+<li><font color="993300">ScrollBars (<font color="red">Filtering Crest Lines</font>):</font> you have to apply "Compute Crests" button at least one time before changing the following scrollbars.</li>
+<ul>
+<li>Curvature s-deviation: thresholding value for the curvature visualization, see "Original Mesh->Curvature-Pastel" section. It is better to change this value when the mesh is colored almost one color for curvature visualization.</li>
+<li><font color="blue">Ridgeness:</font> changing ridgeness which is integration of the curvature along the connected crest lines.</li>
+<li><font color="blue">Sphericalness:</font> changing sphericalness which is average of the window functioned Shapeindex for the connected crest lines (0 < s <1).</li>
+<li><font color="red">Cyclideness:</font> changing cyclideness which is integration of the MVS (minimum variation surface) functional along the connected crest lines, see the <a href="../../spm05ybs.pdf">paper</a>).</li>
+
+
+</ul>
+
+</ul>
+
+<H2><a href="./Car/Crest.html">Another Examples</a></H2>
+
+
+<hr>
+Log:<br>
+Nov 2 2004: Update.<br>
+Feb 26 2005: Fix a bug when the mesh vertex has exact zero curvature derivative.<br>
+Apr 20 2005: Add another examples.
+<hr>
+</center>
+<!--End of Table of Child-Links-->
+<HR>
+<ADDRESS>
+
+<a href="../../">go back to home...</a><br>
+
+<hr>
+<font color='black' size=2>
+copyright(C)Shin Yoshizawa 
+<BR>Tue Nov  2 22:38:41 CET 2004
+</font>
+</ADDRESS>
+</BODY>
+</HTML>

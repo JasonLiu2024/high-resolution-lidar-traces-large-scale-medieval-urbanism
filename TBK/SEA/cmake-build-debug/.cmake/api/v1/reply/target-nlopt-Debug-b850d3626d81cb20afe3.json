@@ -1,0 +1,899 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "_deps/nlopt-build/libnlopt.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"add_dependencies",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"cmake-build-debug/_deps/nlopt-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 243,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 244,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 253,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fPIC  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-build/src/api"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-build"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/stogo"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/ags"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/util"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/direct"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/cdirect"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/praxis"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/luksan"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/crs"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/mlsl"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/mma"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/cobyla"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/newuoa"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/neldermead"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/auglag"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/bobyqa"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/isres"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/slsqp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/esch"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/api"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				6,
+				7,
+				9,
+				11,
+				12,
+				13,
+				14,
+				15,
+				17,
+				19,
+				21,
+				23,
+				24,
+				26,
+				28,
+				30,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				42,
+				43,
+				44,
+				47,
+				51,
+				52,
+				54,
+				55,
+				57,
+				59,
+				60
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fPIC -std=c++11  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics"
+				},
+				{
+					"fragment" : "-std=gnu++14"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-build/src/api"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-build"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/stogo"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/ags"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/util"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/direct"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/cdirect"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/praxis"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/luksan"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/crs"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/mlsl"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/mma"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/cobyla"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/newuoa"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/neldermead"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/auglag"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/bobyqa"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/isres"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/slsqp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/esch"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/api"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				61,
+				62,
+				63,
+				64,
+				65,
+				74,
+				76,
+				78,
+				80
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "generate-cpp::@a8304200459dfe73b85b"
+		}
+	],
+	"id" : "nlopt::@a8304200459dfe73b85b",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"name" : "nlopt",
+	"nameOnDisk" : "libnlopt.a",
+	"paths" : 
+	{
+		"build" : "_deps/nlopt-build",
+		"source" : "cmake-build-debug/_deps/nlopt-src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				6,
+				7,
+				9,
+				11,
+				12,
+				13,
+				14,
+				15,
+				17,
+				19,
+				21,
+				23,
+				24,
+				26,
+				28,
+				30,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				42,
+				43,
+				44,
+				47,
+				51,
+				52,
+				54,
+				55,
+				57,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				74,
+				76,
+				78,
+				80
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				4,
+				5,
+				8,
+				10,
+				16,
+				18,
+				20,
+				22,
+				25,
+				27,
+				29,
+				32,
+				34,
+				36,
+				38,
+				40,
+				45,
+				46,
+				48,
+				49,
+				50,
+				53,
+				56,
+				58,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				75,
+				77,
+				79,
+				81
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/direct/DIRect.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/direct/direct_wrap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/direct/DIRserial.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/direct/DIRsubrout.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/direct/direct-internal.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/direct/direct.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/cdirect/cdirect.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/cdirect/hybrid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/cdirect/cdirect.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/praxis/praxis.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/praxis/praxis.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/luksan/plis.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/luksan/plip.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/luksan/pnet.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/luksan/mssubs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/luksan/pssubs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/luksan/luksan.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/crs/crs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/crs/crs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/mlsl/mlsl.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/mlsl/mlsl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/mma/mma.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/mma/mma.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/mma/ccsa_quadratic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/cobyla/cobyla.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/cobyla/cobyla.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/newuoa/newuoa.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/newuoa/newuoa.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/neldermead/nldrmd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/neldermead/neldermead.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/neldermead/sbplx.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/auglag/auglag.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/auglag/auglag.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/bobyqa/bobyqa.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/bobyqa/bobyqa.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/isres/isres.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/isres/isres.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/slsqp/slsqp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/slsqp/slsqp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/esch/esch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/esch/esch.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/api/general.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/api/options.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/api/optimize.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/api/deprecated.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/api/nlopt-internal.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/api/nlopt.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/api/f77api.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/api/f77funcs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/api/f77funcs_.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/_deps/nlopt-build/nlopt.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/util/mt19937ar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/util/sobolseq.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/util/soboldata.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/util/timer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/util/stop.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/util/nlopt-util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/util/redblack.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/util/redblack.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/util/qsort_r.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/util/rescale.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/stogo/global.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/stogo/linalg.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/stogo/local.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/stogo/stogo.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/stogo/tools.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/stogo/global.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/stogo/linalg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/stogo/local.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/stogo/stogo_config.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/stogo/stogo.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/stogo/tools.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/ags/data_types.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/ags/evolvent.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/ags/evolvent.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/ags/solver.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/ags/solver.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/ags/local_optimizer.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/ags/local_optimizer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/ags/ags.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/algs/ags/ags.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/api/nlopt-in.hpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

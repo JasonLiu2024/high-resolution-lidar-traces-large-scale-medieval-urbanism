@@ -1,0 +1,3 @@
+/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-build/CMakeTmp/UNDEFINED_SYMBOLS_ALLOWED/CMakeFiles/foo.dir
+/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-build/CMakeTmp/UNDEFINED_SYMBOLS_ALLOWED/CMakeFiles/edit_cache.dir
+/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-build/CMakeTmp/UNDEFINED_SYMBOLS_ALLOWED/CMakeFiles/rebuild_cache.dir

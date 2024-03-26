@@ -1,0 +1,453 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						28,
+						29
+					]
+				},
+				{
+					"build" : "_deps/cli11-build",
+					"jsonFile" : "directory-_deps.cli11-build-Debug-8d3d54b086996c269f46.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "cmake-build-debug/_deps/cli11-src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27
+					]
+				},
+				{
+					"build" : "_deps/nlopt-build",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.nlopt-build-Debug-f197f7917ad3f610e581.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.11"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "cmake-build-debug/_deps/nlopt-src",
+					"targetIndexes" : 
+					[
+						30,
+						31,
+						32
+					]
+				},
+				{
+					"build" : "_deps/nlopt-build/src/api",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.nlopt-build.src.api-Debug-aa24d9e7aad412d19691.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.11"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "cmake-build-debug/_deps/nlopt-src/src/api"
+				},
+				{
+					"build" : "_deps/nlopt-build/src/swig",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.nlopt-build.src.swig-Debug-b411e6312fe25d5537c7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.11"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "cmake-build-debug/_deps/nlopt-src/src/swig",
+					"targetIndexes" : 
+					[
+						33
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SEA",
+					"targetIndexes" : 
+					[
+						28,
+						29
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "CLI11",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "nlopt",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						30,
+						31,
+						32,
+						33
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Continuous::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-Continuous-Debug-0f8e9495033a8742ddd0.json",
+					"name" : "Continuous",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousBuild::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ContinuousBuild-Debug-fa5bc66a51e5a8269c28.json",
+					"name" : "ContinuousBuild",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousConfigure::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ContinuousConfigure-Debug-db5c4c13b7e701d9e90b.json",
+					"name" : "ContinuousConfigure",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousCoverage::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ContinuousCoverage-Debug-2bd66be45787d8151762.json",
+					"name" : "ContinuousCoverage",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousMemCheck::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ContinuousMemCheck-Debug-21fb495aa329f51706ba.json",
+					"name" : "ContinuousMemCheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousStart::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ContinuousStart-Debug-4f647151c85d165cb3d4.json",
+					"name" : "ContinuousStart",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousSubmit::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ContinuousSubmit-Debug-50e578ca561c388a9530.json",
+					"name" : "ContinuousSubmit",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousTest::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ContinuousTest-Debug-8c3d19d8a8de185bc656.json",
+					"name" : "ContinuousTest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousUpdate::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ContinuousUpdate-Debug-e53213e9137ca93852e8.json",
+					"name" : "ContinuousUpdate",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Experimental::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-Experimental-Debug-3f633861537de0bc0ae1.json",
+					"name" : "Experimental",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalBuild::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ExperimentalBuild-Debug-46521bd15a0fbce574f6.json",
+					"name" : "ExperimentalBuild",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalConfigure::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ExperimentalConfigure-Debug-aae5923cb0a95b149cf0.json",
+					"name" : "ExperimentalConfigure",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalCoverage::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ExperimentalCoverage-Debug-3d0e503c1304bf2ebe66.json",
+					"name" : "ExperimentalCoverage",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalMemCheck::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ExperimentalMemCheck-Debug-4c3d4d3552a91d012dc3.json",
+					"name" : "ExperimentalMemCheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalStart::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ExperimentalStart-Debug-40ec79bd62747a6697ca.json",
+					"name" : "ExperimentalStart",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalSubmit::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ExperimentalSubmit-Debug-873e45632e304bf46a1b.json",
+					"name" : "ExperimentalSubmit",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalTest::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ExperimentalTest-Debug-820ea83eff787677fe7a.json",
+					"name" : "ExperimentalTest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalUpdate::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-ExperimentalUpdate-Debug-5fd2ef31f375d005d399.json",
+					"name" : "ExperimentalUpdate",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Nightly::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-Nightly-Debug-fccf230ddf89fca6b33a.json",
+					"name" : "Nightly",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyBuild::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-NightlyBuild-Debug-e244df5cb8ee24ca5058.json",
+					"name" : "NightlyBuild",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyConfigure::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-NightlyConfigure-Debug-671f8e6ec23b546541f4.json",
+					"name" : "NightlyConfigure",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyCoverage::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-NightlyCoverage-Debug-34a3304bbd2309d35fbe.json",
+					"name" : "NightlyCoverage",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyMemCheck::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-NightlyMemCheck-Debug-16c716e2003c93938ebc.json",
+					"name" : "NightlyMemCheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyMemoryCheck::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-NightlyMemoryCheck-Debug-073ce3d216050a49891b.json",
+					"name" : "NightlyMemoryCheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyStart::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-NightlyStart-Debug-ef05047666b80868fb6e.json",
+					"name" : "NightlyStart",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlySubmit::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-NightlySubmit-Debug-a0889281f980650a719d.json",
+					"name" : "NightlySubmit",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyTest::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-NightlyTest-Debug-1d92e08717e33244874a.json",
+					"name" : "NightlyTest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyUpdate::@b24886b5f5c9e75d0c2f",
+					"jsonFile" : "target-NightlyUpdate-Debug-d891df1908f847197837.json",
+					"name" : "NightlyUpdate",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SEA::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SEA-Debug-cae075444eddd44f4f94.json",
+					"name" : "SEA",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SEA_QN::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SEA_QN-Debug-dccf5e3cf79278e9c8fd.json",
+					"name" : "SEA_QN",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "generate-cpp::@a8304200459dfe73b85b",
+					"jsonFile" : "target-generate-cpp-Debug-bea936cdb79aae6bcab7.json",
+					"name" : "generate-cpp",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "generate-fortran::@a8304200459dfe73b85b",
+					"jsonFile" : "target-generate-fortran-Debug-e278d93b4615dac84c47.json",
+					"name" : "generate-fortran",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "nlopt::@a8304200459dfe73b85b",
+					"jsonFile" : "target-nlopt-Debug-b850d3626d81cb20afe3.json",
+					"name" : "nlopt",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "nlopt_python::@f7a7e9cbfebc02645412",
+					"jsonFile" : "target-nlopt_python-Debug-a03f4e5589017829a2c1.json",
+					"name" : "nlopt_python",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug",
+		"source" : "/Users/kronos.di.vlad/Desktop/SEA_folder"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

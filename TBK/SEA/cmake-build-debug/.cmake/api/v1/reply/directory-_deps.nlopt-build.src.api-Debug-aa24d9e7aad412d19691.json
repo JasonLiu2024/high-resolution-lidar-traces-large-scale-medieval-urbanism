@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"cmake-build-debug/_deps/nlopt-src/src/api/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "share/man/man3",
+			"paths" : 
+			[
+				"cmake-build-debug/_deps/nlopt-src/src/api/nlopt.3",
+				"cmake-build-debug/_deps/nlopt-src/src/api/nlopt_minimize.3",
+				"cmake-build-debug/_deps/nlopt-src/src/api/nlopt_minimize_constrained.3"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/nlopt-build/src/api",
+		"source" : "cmake-build-debug/_deps/nlopt-src/src/api"
+	}
+}

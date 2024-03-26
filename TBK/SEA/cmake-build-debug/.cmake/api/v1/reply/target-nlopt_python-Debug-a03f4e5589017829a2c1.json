@@ -1,0 +1,330 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "_deps/nlopt-build/src/swig/_nlopt.so"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"swig_add_library",
+			"install",
+			"target_link_libraries",
+			"swig_link_libraries",
+			"include_directories",
+			"target_include_directories",
+			"set_property",
+			"SWIG_ADD_SOURCE_TO_MODULE"
+		],
+		"files" : 
+		[
+			"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/UseSWIG.cmake",
+			"cmake-build-debug/_deps/nlopt-src/src/swig/CMakeLists.txt",
+			"cmake-build-debug/_deps/nlopt-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 905,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 50,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1034,
+				"parent" : 4
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 245,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 888,
+				"parent" : 1
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 717,
+				"parent" : 11
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fPIC -std=c++11  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -fcolor-diagnostics"
+				},
+				{
+					"fragment" : "-std=gnu++14"
+				},
+				{
+					"backtrace" : 12,
+					"fragment" : ""
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "nlopt_python_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-build/src/api"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-build"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/stogo"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/ags"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/util"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/direct"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/cdirect"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/praxis"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/luksan"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/crs"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/mlsl"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/mma"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/cobyla"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/newuoa"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/neldermead"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/auglag"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/bobyqa"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/isres"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/slsqp"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/algs/esch"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src/src/api"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/Users/kronos.di.vlad/opt/anaconda3/include/python3.9"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/Users/kronos.di.vlad/opt/anaconda3/lib/python3.9/site-packages/numpy/core/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "generate-cpp::@a8304200459dfe73b85b"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "nlopt::@a8304200459dfe73b85b"
+		}
+	],
+	"id" : "nlopt_python::@f7a7e9cbfebc02645412",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "lib/python3.9/site-packages"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-undefined dynamic_lookup",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "_deps/nlopt-build/libnlopt.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "nlopt_python",
+	"nameOnDisk" : "_nlopt.so",
+	"paths" : 
+	{
+		"build" : "_deps/nlopt-build/src/swig",
+		"source" : "cmake-build-debug/_deps/nlopt-src/src/swig"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/_deps/nlopt-build/src/swig/CMakeFiles/nlopt_python.dir/nloptPYTHON_wrap.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/_deps/nlopt-build/src/swig/nlopt.py",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "cmake-build-debug/_deps/nlopt-src/src/swig/nlopt.i",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

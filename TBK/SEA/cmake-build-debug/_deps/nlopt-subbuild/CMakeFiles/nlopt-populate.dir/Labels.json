@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/CMakeFiles/nlopt-populate"
+		},
+		{
+			"file" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/CMakeFiles/nlopt-populate.rule"
+		},
+		{
+			"file" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/CMakeFiles/nlopt-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-build.rule"
+		},
+		{
+			"file" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-download.rule"
+		},
+		{
+			"file" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-install.rule"
+		},
+		{
+			"file" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-test.rule"
+		},
+		{
+			"file" : "/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nlopt-populate"
+		],
+		"name" : "nlopt-populate"
+	}
+}

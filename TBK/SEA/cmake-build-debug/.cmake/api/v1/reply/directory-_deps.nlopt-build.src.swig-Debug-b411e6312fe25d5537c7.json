@@ -1,0 +1,61 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"cmake-build-debug/_deps/nlopt-src/src/swig/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 49,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 50,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.9/site-packages",
+			"paths" : 
+			[
+				"cmake-build-debug/_deps/nlopt-build/src/swig/nlopt.py"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.9/site-packages",
+			"paths" : 
+			[
+				"_deps/nlopt-build/src/swig/_nlopt.so"
+			],
+			"targetId" : "nlopt_python::@f7a7e9cbfebc02645412",
+			"targetIndex" : 33,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/nlopt-build/src/swig",
+		"source" : "cmake-build-debug/_deps/nlopt-src/src/swig"
+	}
+}

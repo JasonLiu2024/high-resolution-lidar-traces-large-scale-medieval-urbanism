@@ -1,0 +1,120 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"cmake-build-debug/_deps/nlopt-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 190,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 240,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 293,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 371,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 389,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"cmake-build-debug/_deps/nlopt-build/nlopt.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"cmake-build-debug/_deps/nlopt-src/src/api/nlopt.h",
+				"cmake-build-debug/_deps/nlopt-build/nlopt.hpp",
+				"cmake-build-debug/_deps/nlopt-build/nlopt.f"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/nlopt-build/libnlopt.a"
+			],
+			"targetId" : "nlopt::@a8304200459dfe73b85b",
+			"targetIndex" : 32,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Development",
+			"destination" : "lib/cmake/nlopt",
+			"exportName" : "NLoptLibraryDepends",
+			"exportTargets" : 
+			[
+				{
+					"id" : "nlopt::@a8304200459dfe73b85b",
+					"index" : 32
+				}
+			],
+			"paths" : 
+			[
+				"_deps/nlopt-build/CMakeFiles/Export/f1922ff44cc4dc88f95ca1075600a5b3/NLoptLibraryDepends.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Development",
+			"destination" : "lib/cmake/nlopt",
+			"paths" : 
+			[
+				"cmake-build-debug/_deps/nlopt-build/NLoptConfig.cmake",
+				"cmake-build-debug/_deps/nlopt-build/NLoptConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/nlopt-build",
+		"source" : "cmake-build-debug/_deps/nlopt-src"
+	}
+}

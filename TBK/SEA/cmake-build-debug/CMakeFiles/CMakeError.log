@@ -1,0 +1,49 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Performing C SOURCE FILE Test HAVE_THREAD_LOCAL_STORAGE failed with the following output:
+Change Dir: /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_0a279 && [1/2] Building C object CMakeFiles/cmTC_0a279.dir/src.c.o
+FAILED: CMakeFiles/cmTC_0a279.dir/src.c.o 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_THREAD_LOCAL_STORAGE  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_0a279.dir/src.c.o -MF CMakeFiles/cmTC_0a279.dir/src.c.o.d -o CMakeFiles/cmTC_0a279.dir/src.c.o -c /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:5: error: '__declspec' attributes are not enabled; use '-fdeclspec' or '-fms-extensions' to enable support for __declspec attributes
+    __declspec(thread) int tls;
+    ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+    __declspec(thread) int tls;
+
+    int main(void) {
+        return 0;
+    }
+Performing Test UNDEFINED_SYMBOLS_ALLOWED failed with the following output:
+Change Dir: /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_e8ccf && [1/2] Building CXX object CMakeFiles/cmTC_e8ccf.dir/CheckSymbolExists.cxx.o
+[2/2] Linking CXX executable cmTC_e8ccf
+
+

@@ -1,0 +1,21 @@
+# ninja log v5
+0	12	1686075374865959164	nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-mkdir	67cfbab95d1ce881
+0	12	1686075374865959164	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-mkdir	67cfbab95d1ce881
+12	1462	1686075376316440664	nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-download	1488d8f55b42e6a4
+12	1462	1686075376316440664	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-download	1488d8f55b42e6a4
+1463	1494	0	nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-update	9e732ed24af11380
+1463	1494	0	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-update	9e732ed24af11380
+1494	1506	1686075376359615997	nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-patch	80e99d18069b6b9
+1494	1506	1686075376359615997	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-patch	80e99d18069b6b9
+1506	1518	1686075376370244164	nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-configure	ab4b3ef854e0a005
+1506	1518	1686075376370244164	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-configure	ab4b3ef854e0a005
+1518	1529	1686075376382983414	nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-build	bbfed0af119936d0
+1518	1529	1686075376382983414	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-build	bbfed0af119936d0
+1529	1540	1686075376394054914	nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-install	80da3f19c393e913
+1529	1540	1686075376394054914	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-install	80da3f19c393e913
+1540	1551	1686075376405127706	nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-test	82de60158888025b
+1540	1551	1686075376405127706	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-test	82de60158888025b
+1551	1567	1686075376421080872	CMakeFiles/nlopt-populate-complete	10eb0f339a00a27e
+1551	1567	1686075376421080872	nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-done	10eb0f339a00a27e
+1551	1567	1686075376421080872	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/CMakeFiles/nlopt-populate-complete	10eb0f339a00a27e
+1551	1567	1686075376421080872	/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-done	10eb0f339a00a27e

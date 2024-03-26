@@ -1,0 +1,198 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: nlopt-populate
+# Configurations: 
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/
+
+#############################################
+# Utility command for nlopt-populate
+
+build nlopt-populate: phony CMakeFiles/nlopt-populate CMakeFiles/nlopt-populate-complete nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-done nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-build nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-configure nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-download nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-install nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-mkdir nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-patch nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-test nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-update
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild -B/Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Phony custom command for CMakeFiles/nlopt-populate
+
+build CMakeFiles/nlopt-populate | ${cmake_ninja_workdir}CMakeFiles/nlopt-populate: phony CMakeFiles/nlopt-populate-complete
+
+
+#############################################
+# Custom command for CMakeFiles/nlopt-populate-complete
+
+build CMakeFiles/nlopt-populate-complete nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-done | ${cmake_ninja_workdir}CMakeFiles/nlopt-populate-complete ${cmake_ninja_workdir}nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-done: CUSTOM_COMMAND nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-install nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-mkdir nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-download nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-update nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-patch nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-configure nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-build nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-install nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-test
+  COMMAND = cd /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/CMakeFiles && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/CMakeFiles/nlopt-populate-complete && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-done
+  DESC = Completed 'nlopt-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-build
+
+build nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-build | ${cmake_ninja_workdir}nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-build: CUSTOM_COMMAND nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-configure
+  COMMAND = cd /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-build && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-build
+  DESC = No build step for 'nlopt-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-configure
+
+build nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-configure | ${cmake_ninja_workdir}nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-configure: CUSTOM_COMMAND nlopt-populate-prefix/tmp/nlopt-populate-cfgcmd.txt nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-patch
+  COMMAND = cd /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-build && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-configure
+  DESC = No configure step for 'nlopt-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-download
+
+build nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-download | ${cmake_ninja_workdir}nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-download: CUSTOM_COMMAND nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-gitinfo.txt nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-mkdir
+  COMMAND = cd /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/tmp/nlopt-populate-gitclone.cmake && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-download
+  DESC = Performing download step (git clone) for 'nlopt-populate'
+  pool = console
+  restat = 1
+
+
+#############################################
+# Custom command for nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-install
+
+build nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-install | ${cmake_ninja_workdir}nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-install: CUSTOM_COMMAND nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-build
+  COMMAND = cd /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-build && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-install
+  DESC = No install step for 'nlopt-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-mkdir
+
+build nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-mkdir | ${cmake_ninja_workdir}nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-mkdir: CUSTOM_COMMAND
+  COMMAND = cd /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -Dcfgdir= -P /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/tmp/nlopt-populate-mkdirs.cmake && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-mkdir
+  DESC = Creating directories for 'nlopt-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-patch
+
+build nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-patch | ${cmake_ninja_workdir}nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-patch: CUSTOM_COMMAND nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-update
+  COMMAND = cd /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-patch
+  DESC = No patch step for 'nlopt-populate'
+  pool = console
+  restat = 1
+
+
+#############################################
+# Custom command for nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-test
+
+build nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-test | ${cmake_ninja_workdir}nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-test: CUSTOM_COMMAND nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-install
+  COMMAND = cd /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-build && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-test
+  DESC = No test step for 'nlopt-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-update
+
+build nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-update | ${cmake_ninja_workdir}nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-update: CUSTOM_COMMAND nlopt-populate-prefix/src/nlopt-populate-stamp/nlopt-populate-download
+  COMMAND = cd /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild/nlopt-populate-prefix/tmp/nlopt-populate-gitupdate.cmake
+  DESC = Performing update step for 'nlopt-populate'
+  pool = console
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/kronos.di.vlad/Desktop/SEA_folder/cmake-build-debug/_deps/nlopt-subbuild
+
+build all: phony nlopt-populate
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/RepositoryInfo.txt.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/cfgcmd.txt.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/gitclone.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/gitupdate.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/mkdirs.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeSystem.cmake CMakeLists.txt nlopt-populate-prefix/tmp/nlopt-populate-mkdirs.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/RepositoryInfo.txt.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/cfgcmd.txt.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/gitclone.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/gitupdate.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/mkdirs.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeSystem.cmake CMakeLists.txt nlopt-populate-prefix/tmp/nlopt-populate-mkdirs.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
