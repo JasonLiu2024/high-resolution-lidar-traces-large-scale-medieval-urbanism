@@ -1,5 +1,5 @@
 # Frachetti et al. 2024-03-05358
-Code for "*Automated analysis of high-resolution lidar traces large-scale medieval urbanism in highland Central Asia*" by Michael Frachetti, Jack Berner, Jason Liu, Edward Henry, Tao Ju, Farhod Maksudov
+Code for "*Automated analysis of high-resolution lidar traces large-scale medieval urbanism in highland Central Asia*" by Michael Frachetti, Jack Berner, Jason Liu, Edward Henry, Tao Ju, Farhod Maksudov (Pre-print in review: https://doi.org/10.21203/rs.3.rs-4108554/v1)
 
 ## Files
 ### TBK
