@@ -3,7 +3,7 @@ Code for "*Automated analysis of high-resolution lidar traces large-scale mediev
 
 ## Files
 ### TBK
-Code to reproduce results in the Tashbulak area
+Code to reproduce results for the Tashbulak site area:
 #### Code to run:
 1. 1_TBK_crest_lines.ipynb
 2. 2_TBK_GPR.ipynb
@@ -14,7 +14,7 @@ Code to reproduce results in the Tashbulak area
 - SEA from https://github.com/duxingyi-charles/Smooth-Excess-Area/blob/main/IO/convert_input_2D.py
 
 ### TGB
-Code to reproduce results in the Tugunbulak area
+Code to reproduce results for the Tugunbulak site area:
 #### Code to run:
 1. 1_TGB_crest_lines.ipynb
 2. 2_prepare_human_vs_crest_lines.ipynb
