@@ -18,7 +18,7 @@ Our machine is an Apple M1 Pro chip with 16GB RAM.
 2. (~5 minutes) Compile ```CrestCODE``` and ```SEA``` in their respective folders.
 
 ## 3. Demo
-### Preprocessing
+### Preprocessing  (in both ```TBK``` and ```TGB``` folders)
 - ```point_cloud_to_mesh.ipynb``` Generates mesh from a point cloud. Prior georeferencing of the point cloud carries over to this mesh.
 <br><b>Expected output</b>: mesh with triangles, such as:
 <br>![](/pictures/tgb_mesh_raw.png)
@@ -27,7 +27,7 @@ Our machine is an Apple M1 Pro chip with 16GB RAM.
 > [!NOTE]
 > Dataset: we provide ```TBK/TBK_mesh.ply``` and ```TGB/TGB_mesh.ply```, which are produced through this file.
 
-### Tashbulak (TBK) results reproduction
+### Tashbulak (TBK) results reproduction (```TBK``` folder)
 (Timed based on provided data)
 1. (~10 minutes)```1_TBK_crest_lines.ipynb```
 (1) Generates crest lines from a mesh with ```CrestCODE/``` and (2) Deforms the mesh using ```SEA/```
@@ -55,7 +55,7 @@ Our machine is an Apple M1 Pro chip with 16GB RAM.
 4. (~5 minutes)```4_TBK_crestlines_to_shapefile.ipynb``` converts crest lines to Shapefile format.
 <br><b>Expected output</b>: crest lines in Shapefile (the projection could be adjusted, and images previews could be exported)
 
-### Tugunbulak (TBK) results reproduction
+### Tugunbulak (TBK) results reproduction (```TGB``` folder)
 (Timed based on provided data)
 #### Code to run:
 1. (~10 minutes)```1_TGB_crest_lines.ipynb``` Generates crest lines from a mesh with ```CrestCODE/```
