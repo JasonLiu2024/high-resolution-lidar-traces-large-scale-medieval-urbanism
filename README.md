@@ -1,6 +1,37 @@
 # Frachetti et al. (Under review: Nature_2024-03-05358)
 Code for "*Automated analysis of high-resolution lidar traces large-scale medieval urbanism in highland Central Asia*" by Michael Frachetti, Jack Berner, Jason Liu, Edward Henry, Tao Ju, Farhod Maksudov (Pre-print in review: https://doi.org/10.21203/rs.3.rs-4108554/v1)
 
+## Menu
+- [Revision 1 Code Updates!](#revision-1-code-updates)
+- [System requirements](#1-system-requirements)
+- [Installation guide](#2-installation-guide)
+- [Demo](#3-demo)
+<br>(1) [Geospatial data preprocessing](#preprocessing--in-both-tbk-and-tgb-folders)
+<br>(2) [Tashbulak (TBK) results](#tashbulak-tbk-results-reproduction-tbk-folder)
+<br>(3) [Tugunbulak (TGB) results](#tugunbulak-tbk-results-reproduction-tgb-folder)
+
+## Revision 1 code updates
+1. ```TBK/revision-1.ipynb``` produces new visuals, including the following.
+<br>Crest lines and landmarks before deformation via ```SEA```
+<br>![](/pictures/closeup-before.png)
+<br>After the deformation
+<br>![](/pictures/closeup-after.png)
+2. ```TBK/blender-script.py```
+Script to create 3D visuals of the landmarks, to be used in Blender 4.0.1 (https://www.blender.org). To run this script:
+<br>(1) Set up a custom ```Geometry Node``` function group as follows:
+<br>![](/pictures/geometry-node.png)
+<br>Each landmark is a 3D vertex. 
+<br>A polygonal mesh (blue triangular sphere in above picture) is supplied
+<br>The geometry node function is then applied to the aforementioned 3D vertex, displaying it in a more prominent fashion.
+<br>(2) Paste the content of this file into the window in the ```Scripting``` tab (or alternatively read from this file directly)
+<br>![](/pictures/blender-demo.png)
+<br>Expected result:
+<br>![](/pictures/3d-visual-in-blender.png)
+
+### Snapping
+> [!NOTE]
+> The ```Snap``` function is recommended for manually selecting and moving mesh landmarks. It attracts user-selected 3D vertices to the mesh.
+
 ## 1. System requirements
 ### Software dependencies
 - ```requirements.txt``` Lists required python packages
@@ -35,8 +66,7 @@ Our machine is an Apple M1 Pro chip with 16GB RAM.
 : 
 <br>(1) crest lines, such as (red crest lines on white shaded mesh):
 <br>![](/pictures/tbk_mesh_with_crest_lines.png)
-<br>(2) deformed mesh that is completely flat. Crest lines (that lie within triangles on the mesh) are deformed alongwith and rasterized. The bitmap (rendered as an image) looks like (white against black background):
-<br>![](/pictures/tbk_crest-lines_deformed.png)
+<br>(2) deformed mesh that is completely flat. Crest lines (that lie within triangles on the mesh) are deformed alongwith and rasterized.
 
 > [!IMPORTANT]
 > Centerline extraction is affected by the size of the GPR image.
@@ -51,6 +81,8 @@ Our machine is an Apple M1 Pro chip with 16GB RAM.
 3. (~10 minutes)```3_TBK_validation.ipynb``` computes similarity of <b>crest lines</b> to <b>centerlines</b>, with statistics and illustration.
 <br><b>Expected output</b>: statistics ('hit' rate, confusion matrix, ect.) with illustrations like (the colors can be adjusted): 
 <br>![](/pictures/tbk_confusion_matrix.png)
+<br>Crest lines, rasterized, then colorized to show 'hits'
+<br>![](/pictures/crest_lines_colorized.png)
 
 4. (~5 minutes)```4_TBK_crestlines_to_shapefile.ipynb``` converts crest lines to Shapefile format.
 <br><b>Expected output</b>: crest lines in Shapefile (the projection could be adjusted, and images previews could be exported)
